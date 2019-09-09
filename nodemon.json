@@ -1,0 +1,14 @@
+{
+    "ignore": [
+        "**/*.test.ts",
+        "**/*.spec.ts",
+        ".git",
+        "node_modules",
+        "uploads"
+    ],
+    "watch": [
+        "src","index.ts",".env"
+    ],
+    "exec": "npm run buildev",
+    "ext": "ts"
+}

@@ -1,0 +1,32 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+      "tslint-config-standard",
+      "tslint-jest"
+    ],
+    "jsRules": {},
+    "linterOptions": {
+      "exclude": [
+        "node_modules",
+        "node_modules/**/*",
+        "node_modules/terraformer",
+        "node_modules/terraformer/**",
+        "public/components/**",
+        "./tslint.json",
+        "dist/**"
+      ]
+    },
+    "rules": {
+      "await-promise": false,
+      "deprecation": true,
+      "no-floating-promises": false,
+      "no-unnecessary-qualifier": false,
+      "no-unnecessary-type-assertion": false,
+      "strict-type-predicates": false,
+      "indent": {
+        "options": ["spaces", 2]
+      }
+    },
+    "rulesDirectory": []
+  }
+  

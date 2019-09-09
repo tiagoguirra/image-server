@@ -1,0 +1,17 @@
+version: "2"
+services:
+  backend:
+    container_name: "backend"
+    restart: always
+    build: ./
+    environment:      
+      - APP_NAME=image-server
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8000      
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"   
+    command: npm start
+    volumes:
+      - ./uploadas:./uploads  
